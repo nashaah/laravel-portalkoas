@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+}
+
+.custom-container {
+    padding: 6em 2em 2em 2em;
+}
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    z-index: 100;
+    overflow-y: auto;
+    padding-top: 20px;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    text-align: center;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+}
+
+#sidebar ul.components li {
+    padding: 10px;
+}
+
+.container {
+    margin-left: 250px; /* Adjust margin to match sidebar width */
+    transition: margin-left 0.3s;
+}
+
+table{
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.addbim{
+    margin-bottom: 1em;
+}
+
+.search-filt{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1em;
+    gap: 1em;
+    max-height: 2.5em;
+}
+
+.search-filt button{
+    width: 20%;
+}
+
+i{
+    margin-right: 0.5em;
+}
+
+@media (max-width: 768px) {
+    .navbar-toggler {
+        display: none;
+    }
+}
